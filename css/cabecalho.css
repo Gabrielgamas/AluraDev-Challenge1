@@ -1,0 +1,210 @@
+:root{
+    --azul_fundo: #051d3b;
+    --azul_botao_forte: #0b254a;
+    --azul_botao_claro: #6179f8;
+    --roxo_botao: #5081fb;
+    --preto_cod:#141414;
+}
+
+.all{
+    background-color: var(--azul_fundo);
+    font-family: 'montserrat';
+}
+
+.cabecalho{
+    align-items: center;
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+}
+
+.cabecalho__logo{
+    width: 24%;
+    max-width: 180px;
+}
+
+.cabecalho__procura::placeholder{
+    color: rgba(255, 255, 255, 0.753);
+    font-size: 16px;
+}
+
+.cabecalho__caixa-pesquisa {
+    position:absolute;
+    left: 22.5%;
+    right: 22.5%;
+    width: 45%;
+    max-width: 600px;
+    padding: 0 1rem;
+}
+
+.cabecalho__procura{
+    background-color: #657588;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: white;
+    height: 50px;
+    max-width: 600px;
+    opacity: 0.6;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 600px;
+    outline: 0;
+}
+
+.cabecalho__perfil{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+    max-width: 180px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+.cabecalho__perfil:hover {
+    background-color:#192f4a ;
+}
+
+.cabecalho__perfil__nome{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.icone-lupa, #checar {
+    display: none;
+}
+
+.cabecalho__perfil__img{
+    border: 1px solid transparent;
+    border-radius: 100px;
+    margin-right: 1rem;
+    max-width:60px;
+}
+
+.cabecalho__procura:hover{
+    border: 2px solid rgb(0, 162, 255);
+    box-shadow: 0px 0px 10px rgb(0, 162, 255);
+}
+
+.cabecalho__procura:focus{
+    border: 2px solid rgb(0, 162, 255);
+}
+
+.cabecalho__menu {
+    display: none;
+    outline: none;
+}
+
+#icone {
+    outline: none;
+}
+
+@media screen and (max-width:878px){
+    
+    .cabecalho{
+        padding: 1rem 1.5em 2rem .5rem;
+    }
+
+    .cabecalho__perfil {
+        display: none;
+    }
+    
+    .cabecalho__logo {
+        max-width: 150px;
+    }
+
+    .cabecalho__menu {
+        display: block;
+    }
+
+    #icone-img {
+        border-radius: 10px;
+    }
+
+    #check:checked ~ #icone-img{
+        background-color: #0073ff ;
+    }
+
+    .check {
+        display: none;
+        outline: none;
+    }
+
+    .menu__navegacao__perfil {
+        display: flex;
+        padding: 20px;
+        align-items: center;
+    }
+
+    .menu__navegacao__img {
+        width: 40px;
+        height:40px;
+        border-radius: 50%;
+    }
+
+    .menu__navegacao__nome {
+        color: white;
+        margin-left: .5rem;
+    }
+
+    .barra {
+        background-color: #2d415b;
+        position: fixed;
+        transition: all .2s linear;
+        top: 80px;
+        right: -300px;
+        border-radius: 8px;
+    }
+
+    .menu__navegacao {
+        width: 100%;
+        top: 60px;
+    }
+
+    .menu__navegacao__link{
+        text-decoration: none;
+    }
+
+    .link {
+        padding: 30px;
+        font-size: 18px;
+        color: white;
+        transition: all .2s linear;
+    }
+
+    #icone {
+        width: 60%;
+
+    }
+
+    #icone-img {
+        transition: all 0.01s linear;
+        padding: 2px;
+    }
+
+    #check:checked ~ #icone-img{
+        background-color: #0073ff;
+    }
+
+    #check:checked ~ .barra {
+        transform: translateX(-300px);
+    }
+
+
+}
+
+
+@media screen and (max-width:438px) {
+    .cabecalho__caixa-pesquisa {
+        display: none;
+    }
+
+    .cabecalho__logo{
+        width: 50%;
+    }
+}

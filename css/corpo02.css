@@ -1,0 +1,198 @@
+.corpo{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 2.5rem;
+}
+
+.menu{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-width: 210px;
+}
+
+.menu__titulo{
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    padding: .5rem 0;
+    text-transform: uppercase;
+}
+
+.menu__itens-link{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    opacity: 0.6;
+    padding: 1rem 0;
+    scale: 1;
+}
+
+.menu__itens-link:hover{
+    opacity: 1;
+    scale: 1.05;
+}
+
+.menu__itens__icone{
+    align-items: center;
+    background-color: var(--azul_botao_claro);
+    border: 1px solid transparent;
+    border-radius: 12px;
+    display: flex;
+    font-weight: 700;
+    height: 48px;
+    justify-content: center;
+    width: 48px;
+}
+
+.menu__itens__txt{
+    font-size: 18px;
+    margin-left: .5rem;
+}
+
+.area-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 1.5rem 1.5rem 0;
+}
+
+.cards__info {
+    background-color: #041832;
+    padding: 1.5rem;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.cards__info--titulo {
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+.cards__info--status {
+    display: flex;
+    justify-content: space-between;
+    margin-top:3rem ;
+    padding: 0 .5rem;
+}
+
+.cards__info--coment {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+}
+
+.cards__cabecalho__perfil{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+    max-width: 180px;
+}
+
+.cards__cabecalho__perfil__nome{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.cards__cabecalho__perfil__img{
+    border: 1px solid transparent;
+    border-radius: 100px;
+    margin-right: 1rem;
+    width: 40px;
+    height: 40px;
+}
+
+.cards__codigo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 400px ;
+}
+
+.cards__codigo__espaco-cor{
+    background-color: aquamarine;
+    border-radius: 8px;
+    height: 350px;
+    padding: 2rem;
+}
+
+.cards__codigo__espaco-cod{
+    background-color: var(--preto_cod);
+    border: 1px solid transparent;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem;
+}
+
+.cards__codigo__img{
+    width: 80px;
+}
+
+.cards__codigo__txt{
+    background-color: var(--preto_cod);
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    color: white;
+    font-size: 16px;
+    height: 100%;
+    outline: 0;
+    text-align: start;
+}
+
+.cards__codigo__txt:focus{
+    border: 1px solid transparent;
+}
+
+
+
+
+@media screen and (max-width:878px){
+    .menu{
+        display: none;
+    }
+
+    .corpo{
+        flex-direction: column;
+        padding: 0 1.5rem;
+    }
+
+    #icone {
+        cursor: pointer;
+        padding: 0 15px;
+        z-index: 1;
+    }
+
+    .area-cards{
+        flex-direction: column;
+        margin:0;
+        padding: 0;
+    }
+
+    .cards {
+        width: 100%;
+        margin:0;
+        margin-top: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 390px){
+    .cabecalho__caixa-pesquisa {
+        display: none;
+    }
+}

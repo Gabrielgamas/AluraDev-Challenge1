@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura DEV</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/dracula.css">
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="stylesheet" href="./css/corpo.css">
+</head>
+<body class="all">
+    <header class="cabecalho">
+        <img src="./img/logo.png" alt="Logo Alura DEV" class="cabecalho__logo">
+        <div class="cabecalho__caixa-pesquisa">
+            <input type="text" name="Procura" class="cabecalho__procura" id="cabecalho__procura" placeholder="Busque por algo">
+            <input type="checkbox" name="checar" id="checar">
+            <label for="checar" class="icone-lupa"><img src="./img/lupa.png" alt="Ícone da lupa"></label>
+        </div>
+        <div class="cabecalho__menu">
+            <input type="checkbox" id="check" class="check">
+            <label for="check" id="icone"><img src="./img/menu.png" alt="Icone do menu" id="icone-img"></label>
+            <aside class="barra">
+                <nav class="menu__navegacao">
+                    <a href="http://127.0.0.1:5500/editor--de--video.html" class="menu__navegacao__link">
+                        <div class="link">Editor de código</div>
+                    </a>
+                    <a href="./comunidade.html" class="menu__navegacao__link">
+                        <div class="link">Comunidade</div>
+                    </a>
+                </nav>
+                <div class="menu__navegacao__perfil">
+                    <img src="./img/FOTO PERFIL (2).jpeg" alt="Foto Perfil" class="menu__navegacao__img">
+                    <p class="menu__navegacao__nome">Gamas</p>
+                </div>
+            </aside>
+        </div>
+        <div class="cabecalho__perfil">
+            <img src="./img/FOTO PERFIL (2).jpeg" alt="Foto Perfil" class="cabecalho__perfil__img">
+            <p class="cabecalho__perfil__nome">Gamas</p>
+        </div>
+    </header>
+    <main class="corpo">
+        <div class="menu">
+            <h1 class="menu__titulo">Menu</h1>
+            <div class="menu__itens">
+                <a href="http://127.0.0.1:5500/editor--de--video.html" class="menu__itens-link">
+                    <div class="menu__itens__icone">&lt;/&gt;</div>
+                    <p class="menu__itens__txt">Editor de código</p>
+                </a>
+            </div>
+            <div class="menu__itens">
+                <a href="./comunidade.html" class="menu__itens-link">
+                    <div class="menu__itens__icone"><img src="./img/Vector.png" alt=""></div>
+                    <p class="menu__itens__txt">Comunidade</p>
+                </a>
+            </div>
+        </div>
+        <div class="codigo">
+            <div class="codigo__espaco-cor">
+                <div class="codigo__espaco-cod">
+                    <div class="codigo__areaCirculos">
+                        <span class="codigo__circulos vermelho"></span>
+                        <span class="codigo__circulos amarelo"></span>
+                        <span class="codigo__circulos verde"></span>
+                    </div>
+                    <div class="codigo__area">
+                        <code class="codigo__txt hljs" contenteditable="true" aria-label="Editor de texto" >function teste() {}</code>
+                    </div>
+                </div>
+            </div>
+            <button class="codigo__botao">Visualizar com o highlight</button>
+        </div>
+        <div class="salvar">
+            <div class="salvar__projeto">
+                <h1 class="salvar__projeto__titulo">Seu Projeto</h1>
+                <input type="text" class="salvar__projeto__nome" placeholder="Nome do seu projeto">
+                <input type="text" class="salvar__projeto__descricao" placeholder="Descrição do seu projeto">
+            </div>
+            <div class="personalizar">
+                <h1 class="personalizar__titulo">Personalização</h1>
+                <div class="personalizar__conteudo">
+                    <select name="linguagem" id="linguagem" class="personalizar__linguagem">
+                        <option value="javascript">Javascript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                    <input type="color" name="cor" id="cor" class="personalizar__cor">
+                </div>    
+            </div>
+            <button class="salvar__botao">Salvar projeto</button>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="./js/hljs.js"></script>
+
+    <script src="./js/mudar-cor.js"></script>
+</body>
+</html>
